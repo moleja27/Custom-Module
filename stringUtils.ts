@@ -15,8 +15,11 @@ export const countCharacters = (str: string): number => {
 
 console.log(countCharacters("hola"));
 
+export const leTras = (b: string): { mayuSculas: string; length: number } => {
+    const mayuSculas = b.toUpperCase();
+    return { mayuSculas, length: mayuSculas.length };
+};
 
-
-
-
-
+const aparIencia: { mayuSculas: string; length: number } = leTras("la vida es una sola");
+console.log(aparIencia.mayuSculas);
+console.log(aparIencia.length); 
